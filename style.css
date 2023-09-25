@@ -490,7 +490,7 @@
                     background-image: url(/images/bg-sidebar-mobile.svg);
                     background-repeat: no-repeat;
                     background-size: cover;
-                    padding: 30px 60px 150px;
+                    padding: 20px 60px 150px;
                     height: 10vh;
                     border-radius: 0;
                     width: 100vw;
@@ -507,7 +507,7 @@
                 }
                 .number-div {
                     text-align: center;
-                    padding: 10px 15px;
+                    padding: 8px 15px;
                     border-radius: 50%;
                     border: 1px solid var(--White);
                     color: var(--White);
