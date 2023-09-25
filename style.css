@@ -520,7 +520,7 @@
                     position: absolute;
                     top: 70%;
                     left: 9%;
-                    padding: 30px;
+                    padding: 25px;
                     background-color: var(--White);
                     border-radius: 10px;
                 }
@@ -546,6 +546,8 @@
                     position: absolute;
                     top: 108%;
                     left: 0%;
+                    padding: 15px;
+                    background-color: white;
                 }
                 .next-page-div-for-mobile {
                     padding: 10px;
