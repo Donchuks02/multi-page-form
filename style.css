@@ -491,7 +491,7 @@
                     background-repeat: no-repeat;
                     background-size: cover;
                     padding: 20px 60px 150px;
-                    height: 12vh;
+                    height: 14vh;
                     border-radius: 0;
                     width: 100vw;
                 }
@@ -507,7 +507,7 @@
                 }
                 .number-div {
                     text-align: center;
-                    padding: 5px 15px;
+                    padding: 3px 15px;
                     border-radius: 50%;
                     border: 1px solid var(--White);
                     color: var(--White);
