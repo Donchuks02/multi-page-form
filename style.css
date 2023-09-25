@@ -491,7 +491,7 @@
                     background-repeat: no-repeat;
                     background-size: cover;
                     padding: 30px 60px 150px;
-                    /* height: 50vh; */
+                    height: 10vh;
                     border-radius: 0;
                     width: 100vw;
                 }
