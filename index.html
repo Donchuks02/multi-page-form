@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Multi-page-form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="background-container">
+        <div class="main-container ">
+            <div class="content-container ">
+                <!-- left container starts here -->
+                <section class="left_section">
+                    <div class="left_main_div">
+                        <div class="first-div num-in-head">
+                            <div class="number-div num-one">
+                                <p>1</p>
+                            </div>
+                            <div class="text-div">
+                                <h5>step 1</h5>
+                                <p>your info</p>
+                            </div>
+                        </div>
+                        <div class="second-div num-in-head">
+                            <div class="number-div num-two">
+                                <p>2</p>
+                            </div>
+                            <div class="text-div">
+                                <h5>step 2</h5>
+                                <p>select plan</p>
+                            </div>
+                        </div>
+                        <div class="third-div num-in-head">
+                            <div class="number-div num-three">
+                                <p>3</p>
+                            </div>
+                            <div class="text-div">
+                                <h5>step 3</h5>
+                                <p>add-ons</p>
+                            </div>
+                        </div>
+                        <div class="fourth-div num-in-head">
+                            <div class="number-div num-four">
+                                <p>4</p>
+                            </div>
+                            <div class="text-div">
+                                <h5>step 4</h5>
+                                <p>add-ons</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- right container starts here -->
+                <section class="right-section step-1 step">
+                    <div class="right_container_header">
+                        <h4>Personal info</h4>
+                        <p>Please provide your name, email address, and phone number.</p>
+                    </div>
+                    <form action="" method="">
+                        <div class="name-con">
+                            <p id="details-error" style="color:red"></p>
+                            <label for="name">name</label><span style="color: red;">*</span>
+                            <br>
+                            <input type="text" name="name" id="name" placeholder="e.g Chukwudi david" required>
+
+                        </div>
+                        <div class="email-con">
+                            <label for="email">email address</label><span style="color: red;">*</span>
+                            <br>
+                            <input type="email" name="email" id="email" placeholder="e.g devchukwudi@lorem.com" required>
+                            <p id="email-error" style="color: red; "></p>
+                        </div>
+                        <div class="phone-con">
+                            <label for="phone-num">phone number</label><span style="color: red;">*</span><br>
+                            <input type="number" name="phone-num" id="phone-num" placeholder="e.g +1 234 567 890" required>
+                        </div>
+
+
+                    </form>
+
+                    <div class="next-page-div">
+                        <div class="goBackBtn">
+                            <a href="" id="go-back">hjsfhfjsh</a>
+                        </div>
+                        <div class="next-step nextStep">
+                            <input type="submit" id="step1" class="nextStepBtn" value="Next Step" style="background-color: gray;">
+                        </div>
+                    </div>
+
+
+
+                </section>
+
+
+                <!-- Step 2 ( monthly ) section  starts here -->
+                <section class="right-section step-2-mo step">
+                    <div class="right_container_header">
+                        <h4>Select your plan</h4>
+                        <p>You have the option of monthly or yearly billing</p>
+                    </div>
+                    <div class="cards-con">
+                        <div class="arcade-monthly-card arcade-card card">
+                            <!-- <div class="arcade-icon"></div> -->
+                            <img src="./images/icon-arcade.svg" alt="arcade-icon">
+                            <div class="arcade-text">
+                                <p>Arcade</p>
+                                <span>$9/mo</span>
+                            </div>
+                        </div>
+                        <div class="advance-monthly-card advance-card card">
+                            <!-- <div class="advanced-icon"></div> -->
+                            <img src="./images/icon-advanced.svg" alt="advanced-icon">
+                            <div class="advanced-text">
+                                <p>Advanced</p>
+                                <p>$12/mo</p>
+                            </div>
+                        </div>
+                        <div class="pro-monthly-card pro-card card">
+                            <!-- <div class="pro-icon"></div> -->
+                            <img src="./images/icon-pro.svg" alt="pro-icon">
+                            <div class="pro-text">
+                                <p>Pro</p>
+                                <p>$15/mo</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="checkbox-area">
+                        <div>
+                            <input type="radio" name="mcheckbox" id="monthly-checkbox" checked>
+                            <label for="monthly-checkbox">monthly</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="checkbox" id="yearly-checkbox">
+                            <label for="yearly-checkbox">yearly</label>
+                        </div>
+                    </div>
+
+
+
+                    <div class="next-page-div">
+                        <div class="goBackBtn">
+                            <a href="" id="go-back">Go Back</a>
+                        </div>
+                        <div class="next-step nextStep">
+                            <input type="button" id="step2MonthBtn" class="nextStepBtn" value="Next step">
+                        </div>
+                    </div>
+
+
+
+                </section>
+
+                <!-- Step 2 ( yearly )section starts here -->
+
+                <section class="right-section step-2-yr step">
+                    <div class="right_container_header">
+                        <h4>Select your plan</h4>
+                        <p>You have the option of monthly or yearly billing</p>
+                    </div>
+                    <div class="cards-con">
+                        <div class="arcade-yearly-card arcade-card card">
+                            <div class="arcade-icon"><img src="./images/icon-arcade.svg" alt="arcade-icon"></div>
+                            <div class="arcade-text">
+                                <p>Arcade</p>
+                                <p>$90/yr</p>
+                                <p>2 months free</p>
+                            </div>
+                        </div>
+                        <div class="advance-yearly-card advance-card card">
+                            <div class="advanced-icon"><img src="./images/icon-advanced.svg" alt="advanced-icon"></div>
+                            <div class="advanced-text">
+                                <p>Advanced</p>
+                                <p>$120/yr</p>
+                                <p>2 months free</p>
+
+                            </div>
+                        </div>
+                        <div class="pro-yearly-card pro-card card">
+                            <div class="pro-icon"><img src="./images/icon-pro.svg" alt="pro-icon"></div>
+                            <div class="pro-text">
+                                <p>Pro</p>
+                                <p>$150/yr</p>
+                                <p>2 months free</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="checkbox-area">
+                        <div>
+                            <input type="radio" name="checkbox" id="monthlyCheckBox">
+                            <label for="monthly-checkbox">monthly</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="ycheckbox" id="yearly-checkbox" checked>
+                            <label for="yearly-checkbox">yearly</label>
+                        </div>
+                    </div>
+
+
+
+                    <div class="next-page-div">
+                        <div class="goBackBtn">
+                            <a href="" id="go-back">Go Back</a>
+                        </div>
+                        <div class="next-step nextStep nextStep">
+                            <input type="button" id="step2YearBtn" class="nextStepBtn" value="Next step">
+                        </div>
+                    </div>
+
+
+
+                </section>
+                <!-- Step 3 ( monthly )section starts here -->
+
+                <section class="right-section step-3-mo step ">
+                    <div class="right_container_header">
+                        <h4>Pick add-ons</h4>
+                        <p>Add-ons help enhance your gaming experience</p>
+                    </div>
+                    <div class="services-con ">
+                        <div class="services-1 card ">
+                            <div class="checkbox-div">
+                                <input type="checkbox" name="" id="checkbox"></div>
+                            <div class="services-texts">
+                                <p>Online service</p>
+                                <p>Access to multiplayer games</p>
+                            </div>
+                            <div class="mnt gap">
+                                <p>+$1/mo</p>
+                            </div>
+                        </div>
+                        <div class="services-2 card">
+                            <div class="checkbox-div">
+                                <input type="checkbox" name="" id="checkbox"></div>
+                            <div class="services-texts">
+                                <p>Larger storage</p>
+                                <p>Extra 1Tb of cloud save </p>
+                            </div>
+                            <div class="mnt gap">
+                                <p>+$2/mo</p>
+                            </div>
+                        </div>
+                        <div class="services-3 card">
+                            <div class="checkbox-div"> <input type="checkbox" name="" id="checkbox"></div>
+
+                            <div class="services-texts">
+                                <p>Customized profile</p>
+                                <p>Custom theme on your profile</p>
+                            </div>
+                            <div class="mnt gap">
+                                <p>+$1/mo</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+
+                    <div class="next-page-div">
+                        <div class="goBackBtn">
+                            <a href="" id="go-back">Go Back</a>
+                        </div>
+                        <div class="next-step nextStep">
+                            <input type="button" id="step3monBtn" class="nextStepBtn" value="Next step">
+                        </div>
+                    </div>
+
+
+
+                </section>
+
+                <!-- Step 3 ( yearly )section starts here -->
+
+                <section class="right-section step-3-yr step">
+                    <div class="right_container_header">
+                        <h4>pick add-ons</h4>
+                        <p>Add-ons help enhance your gaming experience</p>
+                    </div>
+                    <div class="services-con">
+                        <div class="services-1 card">
+                            <div class="checkbox-div"><input type="checkbox" name="" id=""></div>
+                            <div class="services-texts">
+                                <p>Online service</p>
+                                <p>Access to multiplayer games</p>
+                            </div>
+                            <div class="mnt gap">
+                                <p>+$10/yr</p>
+                            </div>
+                        </div>
+                        <div class="services-2 card">
+                            <div class="checkbox-div"><input type="checkbox" name="" id=""></div>
+                            <div class="services-texts">
+                                <p>Larger storage</p>
+                                <p>Extra 1Tb of cloud save</p>
+                            </div>
+                            <div class="mnt gap">
+                                <p>+$20/yr</p>
+                            </div>
+                        </div>
+                        <div class="services-3 card">
+                            <div class="checkbox-div"><input type="checkbox" name="" id=""></div>
+                            <div class="services-texts">
+                                <p>Customizable profile</p>
+                                <p>Custom theme on your profile</p>
+                            </div>
+                            <div class="mnt gap">
+                                <p>+$20/yr</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+
+                    <div class="next-page-div">
+                        <div class="goBackBtn">
+                            <a href="" id="go-back">Go Back</a>
+                        </div>
+                        <div class="next-step">
+                            <input type="button" id="step3yearBtn" class="nextStepBtn" value="Next step">
+                        </div>
+                    </div>
+
+
+
+                </section>
+
+                <!-- Step 4 ( monthly )section starts here -->
+
+                <section class="right-section step-4-mo step">
+                    <div class="right_container_header">
+                        <h4>Finishing up</h4>
+                        <p>Double-check everything looks OK before confirming</p>
+                    </div>
+                    <div class="summary-con">
+                        <div class="summary-texts">
+                            <div class="first-sum">
+                                <div>
+                                    <p>Arcade(Monthly)</p>
+                                    <a href="http:#">Change</a>
+                                </div>
+                                <div>
+                                    <p>$<span>0</span>mo</p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="second-sum">
+                                <div>
+                                    <p>Online service</p>
+
+                                </div>
+                                <div>
+                                    <p>$<span>1</span>mo</p>
+                                </div>
+                            </div>
+                            <div class="third-sum">
+                                <div>
+                                    <p>Larger storage</p>
+
+                                </div>
+                                <div>
+                                    <p>$<span>2</span>mo</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="total-summary">
+
+                            <div class="total">
+                                <p>Total (per month)</p>
+                            </div>
+                            <div class="maintotal">
+                                <p>+$ <span>0</span>month</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+
+                    <div class="next-page-div">
+                        <div class="goBackBtn">
+                            <a href="" id="go-back">Go Back</a>
+                        </div>
+                        <div class="next-step">
+                            <input type="button" id="confirmBtnMon" class="nextStepBtn" value="Confirm">
+                        </div>
+                    </div>
+
+
+
+                </section>
+
+                <!-- Step 4 ( yearly )section starts here -->
+
+                <section class="right-section step-4-yr">
+                    <div class="right_container_header">
+                        <h4>Finishing up</h4>
+                        <p>Double-check everything looks OK before confirming</p>
+                    </div>
+                    <div class="summary-con">
+                        <div class="summary-texts">
+                            <div class="first-sum">
+                                <div>
+                                    <p>Arcade(Monthly)</p>
+                                    <a href="http:#">Change</a>
+                                </div>
+                                <div>
+                                    <p>$<span>0</span>yr</p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="second-sum">
+                                <div>
+                                    <p>Online service</p>
+
+                                </div>
+                                <div>
+                                    <p>$<span>1</span>yr</p>
+                                </div>
+                            </div>
+                            <div class="third-sum">
+                                <div>
+                                    <p>Larger storage</p>
+
+                                </div>
+                                <div>
+                                    <p>$<span>2</span>yr</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="total-summary">
+
+                            <div class="total">
+                                <p>Total (per year)</p>
+                            </div>
+                            <div class="maintotal">
+                                <p>+$ <span>0</span>yr</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="next-page-div">
+                        <div class="goBackBtn">
+                            <a href="" id="go-back">Go Back</a>
+                        </div>
+                        <div class="confirm">
+                            <input type="button" id="confirmBtnYear" class="confirmBtn" value="Confirm">
+                        </div>
+                    </div>
+
+
+
+                </section>
+
+                <!-- Step 5 section starts here -->
+
+
+
+                <section class="right-section step-5">
+                    <div class="thank-you-icon">
+                        <img src="./images/icon-thank-you.svg" alt="">
+                    </div>
+                    <div class="thank-you-con">
+                        <h2>Thank you!</h2>
+                        <p>Thanks for confirming your subscription ! We hope you have fun using our platform. if you ever need support, please feel free to email us at support@loremgaming.com
+                        </p>
+
+                    </div>
+
+
+
+
+
+
+
+
+                </section>
+
+
+            </div>
+        </div>
+        <div class="next-page-div-for-mobile">
+            <div class="goBackBtn-for-mobile">
+                <a href="" id="go-back"></a>
+            </div>
+            <div class="next-step-for-mobile">
+                <input type="button" class="nextStepBtn-for-mobile" value="next step">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

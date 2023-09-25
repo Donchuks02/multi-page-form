@@ -1,0 +1,736 @@
+            *,
+            *::before,
+            *::after {
+                box-sizing: border-box;
+            }
+
+             :root {
+                --Marine-blue: hsl(213, 96%, 18%);
+                --Purplish-blue: hsl(243, 100%, 62%);
+                --Pastel-blue: hsl(228, 100%, 84%);
+                --Light-blue: hsl(206, 94%, 87%);
+                --Strawberry-red: hsl(354, 84%, 57%);
+                --Cool-gray: hsl(231, 11%, 63%);
+                --Light-gray: hsl(229, 24%, 87%);
+                --Magnolia: hsl(217, 100%, 97%);
+                --Alabaster: hsl(231, 100%, 99%);
+                --White: hsl(0, 0%, 100%);
+            }
+
+            .num-one {
+                background-color: var(--Marine-blue);
+            }
+
+            body {
+                margin: 0;
+                font-family: 'Ubuntu', sans-serif;
+                font-size: 1rem;
+                font-weight: 700;
+                background-color: var(--Light-gray);
+            }
+
+            h4 {
+                color: var(--Marine-blue);
+                font-size: 1.5rem;
+            }
+
+            .gap {
+                margin-left: 80px;
+            }
+
+            .right_container_header p {
+                color: var(--Cool-gray);
+            }
+
+            label {
+                text-transform: capitalize;
+                color: var(--Marine-blue);
+            }
+
+            input {
+                padding: 20px;
+                max-width: 1000px;
+                height: 50px;
+            }
+            /* Main containers that holds the form */
+
+            .main-container {
+                background-color: var(--White);
+                width: 60%;
+                max-width: 900px;
+                margin: 70px auto;
+                border-radius: 10px;
+                padding: 10px;
+            }
+
+            .content-container {
+                display: flex;
+                max-width: 1000px;
+            }
+            /* .step-1, */
+
+            .step-5,
+            .step-2-mo,
+            .step-2-yr,
+            .step-3-mo,
+            .step-3-yr,
+            .step-4-mo,
+            .step-4-yr {
+                display: none;
+            }
+            /* Left containers starts here */
+
+            .left_section {
+                background-image: url(./images/bg-sidebar-desktop.svg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                /* padding: 30% auto; */
+                border-radius: 5px;
+                text-transform: uppercase;
+                font-size: .7rem;
+                min-width: 210px;
+            }
+
+            .left_main_div {
+                margin: 35px 50px 35px 35px;
+            }
+
+            .first-div,
+            .second-div,
+            .third-div,
+            .fourth-div {
+                display: flex;
+            }
+
+            .number-div {
+                padding: 7px 10px;
+                border-radius: 50%;
+                border: 1px solid var(--White);
+                color: var(--White);
+            }
+
+            .text-div {
+                margin-left: 10px;
+                padding-top: 5px;
+                color: var(--White);
+            }
+
+            .text-div h5 {
+                color: var(--Cool-gray);
+            }
+
+            .num-in-head+.num-in-head {
+                margin-top: 20px;
+            }
+            /* Right containers starts here */
+
+            .right-section {
+                margin: 0 auto;
+                width: fit-content;
+                max-width: 1000px;
+                padding: 35px;
+            }
+
+            .right_container_header p {
+                font-size: .9rem;
+                font-weight: 500;
+                margin-top: 8px;
+            }
+
+            .name-con,
+            .email-con,
+            .phone-con {
+                margin-top: 20px;
+            }
+
+            .name-con,
+            .email-con,
+            .phone-con label {
+                font-size: .8rem;
+            }
+
+             ::placeholder {
+                color: var(--Cool-gray);
+            }
+
+            .name-con input,
+            .email-con input,
+            .phone-con input {
+                border-radius: 3px;
+                border: 1px solid var(--Light-gray);
+                margin-top: 5px;
+                width: 100%;
+                height: 10px;
+            }
+
+            .step-1 .next-page-div {
+                margin-top: 80px;
+                width: 100%;
+            }
+
+            .step-1 .next-page-div a {
+                font-size: .8rem;
+                text-decoration: none;
+                visibility: hidden;
+                color: var(--Cool-gray);
+            }
+
+            .next-page-div {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 60px;
+            }
+
+            .nextStepBtn,
+            .confirmBtn {
+                background-color: var(--Marine-blue);
+                border: none;
+                border-radius: 5px;
+                color: var(--White);
+                cursor: pointer;
+            }
+            /* Step 2 ( monthly ) section  starts here  */
+
+            .step-2-mo p {
+                font-size: .8rem;
+            }
+
+            .cards-con img {
+                width: 1.5rem;
+                margin-bottom: 30px;
+            }
+
+            .cards-con {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 30px;
+                width: 110%;
+            }
+
+            .arcade-card,
+            .advance-card,
+            .pro-card {
+                padding: 10px 20px 10px 10px;
+                border: 1px solid var(--Light-gray);
+                border-radius: 5px;
+                width: 80px;
+            }
+
+            .arcade-text p:first-child,
+            .advance-card p:first-child,
+            .pro-text p:first-child {
+                color: var(--Marine-blue);
+                font-size: .8rem;
+            }
+
+            .arcade-text span,
+            .advance-card p:last-child,
+            .pro-text p:last-child {
+                color: var(--Cool-gray);
+                font-size: .7rem;
+                margin-top: 5px;
+            }
+
+            .checkbox-area {
+                display: flex;
+                justify-content: space-evenly;
+                margin-top: 30px;
+                background-color: var(--Alabaster);
+                padding: 10px;
+            }
+
+            .checkbox-area input {
+                width: 13px;
+                height: 13px;
+                accent-color: var(--Marine-blue);
+            }
+
+            .step-2-mo .next-page-div {
+                margin-top: 80px;
+                width: 110%;
+            }
+
+            .step-2-mo .next-page-div a {
+                font-size: .8rem;
+                text-decoration: none;
+                color: var(--Cool-gray);
+            }
+            /* Step 2 ( yearly )section starts here */
+
+            .arcade-yearly-card .arcade-text p:nth-child(2),
+            .advance-yearly-card .advanced-text p:nth-child(2),
+            .pro-yearly-card .pro-text p:nth-child(2) {
+                color: var(--Cool-gray);
+                font-size: .9rem;
+            }
+
+            .arcade-yearly-card .arcade-text p:last-child,
+            .advance-yearly-card .advanced-text p:last-child,
+            .pro-yearly-card .pro-text p:last-child {
+                color: var(--Marine-blue);
+                font-size: .7rem;
+                width: 80px;
+            }
+
+            .arcade-yearly-card .arcade-text p:last-child {
+                margin-top: 5px;
+            }
+
+            .step-2-yr .arcade-card,
+            .step-2-yr .advance-card,
+            .step-2-yr .pro-card {
+                padding: 10px 90px 10px 10px;
+                border: 1px solid var(--Light-gray);
+                border-radius: 5px;
+            }
+
+            .step-2-yr .next-page-div {
+                margin-top: 80px;
+                width: 110%;
+            }
+
+            .step-2-yr .next-page-div a {
+                font-size: .8rem;
+                text-decoration: none;
+                color: var(--Cool-gray);
+            }
+            /* Step 3 ( monthly/ yearly )section starts here */
+
+            .services-con {
+                margin-top: 40px;
+            }
+
+            .services-1,
+            .services-2,
+            .services-3 {
+                display: flex;
+                justify-content: space-around;
+                margin-top: 15px;
+                border: 1px solid var(--Cool-gray);
+                border-radius: 5px;
+                align-items: center;
+                padding: 10px;
+            }
+
+            .services-1 .services-texts p:last-child,
+            .services-2 .services-texts p:last-child,
+            .services-3 .services-texts p:last-child {
+                color: var(--Cool-gray);
+                font-size: .7rem;
+                margin-top: 0;
+                min-width: 100px;
+            }
+
+            .services-1 .services-texts p:first-child,
+            .services-2 .services-texts p:first-child,
+            .services-3 .services-texts p:first-child {
+                color: var(--Marine-blue);
+                font-size: .9rem;
+            }
+
+            .services-2 {
+                padding-left: -40px;
+            }
+
+            .services-1 input,
+            .services-2 input,
+            .services-3 input {
+                padding: 0px;
+                width: 15px;
+                height: 15px;
+                margin: 0 auto;
+                accent-color: var(--Marine-blue);
+            }
+
+            .mnt {
+                color: var(--Marine-blue);
+                font-size: .7rem;
+            }
+
+            .services-2 .services-texts {
+                width: 170px;
+            }
+
+            .checkbox-div {
+                width: 30px;
+                height: 30px;
+                align-content: center;
+                padding: 8px 8px;
+                margin-right: 10px;
+            }
+
+            .step-3-mo .next-page-div,
+            .step-3-yr .next-page-div {
+                margin-top: 80px;
+                width: 100%;
+            }
+
+            .step-3-mo .next-page-div a,
+            .step-3-yr .next-page-div a {
+                font-size: .8rem;
+                text-decoration: none;
+                color: var(--Cool-gray);
+            }
+            /* Step 4 ( monthly )section starts here */
+
+            .summary-con {
+                width: 110%;
+            }
+
+            .first-sum,
+            .second-sum,
+            .third-sum,
+            .total-summary {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .first-sum p,
+            .second-sum div:last-child,
+            .third-sum div:last-child {
+                color: var(--Marine-blue);
+                font-size: .9rem;
+            }
+
+            .first-sum a,
+            .second-sum div:first-child,
+            .third-sum div:first-child,
+            .total-summary div:first-child {
+                color: var(--Cool-gray);
+                font-size: .9rem;
+            }
+
+            .first-sum {
+                margin-bottom: 10px;
+            }
+
+            .second-sum,
+            .third-sum {
+                margin-top: 10px;
+            }
+
+            .summary-texts {
+                background-color: var(--Light-gray);
+                margin-top: 20px;
+                padding: 20px;
+                border-radius: 5px;
+            }
+
+            .total-summary {
+                padding: 15px;
+            }
+
+            .maintotal {
+                margin-left: 5px;
+                font-size: .8rem;
+                color: var(--Purplish-blue);
+            }
+
+            .step-4-mo .next-page-div,
+            .step-4-yr .next-page-div {
+                margin-top: 80px;
+                width: 110%;
+            }
+
+            .step-4-mo .next-page-div a,
+            .step-4-yr .next-page-div a {
+                font-size: .8rem;
+                text-decoration: none;
+                color: var(--Cool-gray);
+            }
+            /* Step 5 section starts here  */
+
+            .step-5 {
+                text-align: center;
+                margin: 0 auto;
+                font-weight: 100;
+                padding: 150px 50px;
+            }
+
+            .thank-you-icon img {
+                width: 15%;
+                margin-bottom: 20px;
+            }
+
+            .thank-you-con h2 {
+                color: var(--Marine-blue);
+                margin-bottom: 20px;
+            }
+
+            .thank-you-con p {
+                color: var(--Cool-gray);
+            }
+
+            .next-page-div-for-mobile {
+                display: none;
+            }
+
+            @media(max-width:600px) {
+                /*  step 1 media query for mobile starts here */
+                body {
+                    min-height: 100vh;
+                }
+                .main-container {
+                    position: relative;
+                    margin: 0 auto;
+                    border-radius: 0px;
+                    padding: 0px;
+                    width: 100vw;
+                    min-width: 0;
+                }
+                .gap {
+                    margin-left: 0px;
+                }
+                .content-container {
+                    display: block;
+                }
+                .left_section {
+                    background-image: url(/images/bg-sidebar-mobile.svg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    padding: 30px 60px 150px;
+                    /* height: 50vh; */
+                    border-radius: 0;
+                    width: 100vw;
+                }
+                .text-div {
+                    display: none;
+                }
+                .left_main_div {
+                    display: flex;
+                    justify-content: center;
+                }
+                .num-in-head+.num-in-head {
+                    margin-left: 15px;
+                }
+                .number-div {
+                    text-align: center;
+                    padding: 10px 15px;
+                    border-radius: 50%;
+                    border: 1px solid var(--White);
+                    color: var(--White);
+                }
+                .num-in-head+.num-in-head {
+                    margin-top: 0px;
+                }
+                .right-section {
+                    width: 80%;
+                    position: absolute;
+                    top: 60%;
+                    left: 9%;
+                    padding: 30px;
+                    background-color: var(--White);
+                    border-radius: 10px;
+                }
+                .right-section h4 {
+                    font-size: 1.5rem;
+                }
+                .right-section p {
+                    margin-top: 10px;
+                }
+                .name-con,
+                .email-con,
+                .phone-con {
+                    margin-top: 20px;
+                }
+                .name-con input,
+                .email-con input,
+                .phone-con input {
+                    border-radius: 3px;
+                    border: 1px solid var(--Light-gray);
+                }
+                .next-page-div {
+                    display: flex;
+                    position: absolute;
+                    top: 110%;
+                    left: 0%;
+                }
+                .next-page-div-for-mobile {
+                    padding: 10px;
+                    display: none;
+                    background-color: var(--White);
+                    align-items: center;
+                    justify-content: space-between;
+                    position: relative;
+                    /* top: 450px; */
+                    margin-top: 150%;
+                    margin-left: 0px;
+                }
+                .nextStepBtn-for-mobile {
+                    color: var(--White);
+                    background-color: var(--Marine-blue);
+                    border: none;
+                    border-radius: 8px;
+                    text-transform: capitalize;
+                }
+                /*  step 2 (monthly) media query for mobile starts here */
+                .cards-con {
+                    display: block;
+                    justify-content: space-between;
+                    margin-top: 30px;
+                    width: 100%;
+                }
+                .cards-con img {
+                    width: auto;
+                    margin-bottom: auto;
+                }
+                .arcade-card,
+                .advance-card,
+                .pro-card {
+                    display: flex;
+                    padding: 10px;
+                    margin-top: 15px;
+                    border: 1px solid var(--Light-gray);
+                    border-radius: 8px;
+                    align-items: center;
+                    width: 100%;
+                }
+                .arcade-text,
+                .advanced-text,
+                .pro-text {
+                    margin-left: 10px;
+                    /* text-transform: capitalize; */
+                    color: var(--Marine-blue);
+                }
+                .arcade-text span,
+                .advanced-text p:last-child,
+                .pro-text p:last-child {
+                    color: var(--Cool-gray);
+                    font-size: .8rem;
+                    /* font-weight: 100; */
+                }
+                .checkbox-area {
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    margin-top: 30px;
+                }
+                .checkbox-area input {
+                    /* padding: 0px; */
+                    width: 13px;
+                    height: 13px;
+                    accent-color: var(--Marine-blue);
+                }
+                .checkbox-area div {
+                    align-items: center;
+                }
+                /* Step 2 (yearly) media query for mobile starts here */
+                .arcade-yearly-card .arcade-text p:last-child,
+                .advance-yearly-card .advanced-text p:last-child,
+                .pro-text p:last-child {
+                    color: var(--Marine-blue);
+                    font-size: .8rem;
+                    width: auto;
+                    /* font-weight: 100; */
+                }
+                .arcade-yearly-card .arcade-text p:nth-child(2),
+                .advance-yearly-card .advanced-text p:nth-child(2),
+                .pro-yearly-card .pro-text p:nth-child(2) {
+                    font-size: .8rem;
+                    color: var(--Cool-gray);
+                }
+                /* Step 3 ( monthly / yearly )section starts here  */
+                .services-con {
+                    margin-top: 0px;
+                }
+                .services-1,
+                .services-2,
+                .services-3 {
+                    display: flex;
+                    justify-content: space-around;
+                    margin-top: 15px;
+                    border: 1px solid var(--Cool-gray);
+                    border-radius: 5px;
+                    align-items: center;
+                    padding: 10px;
+                }
+                .services-1 .services-texts p:last-child,
+                .services-2 .services-texts p:last-child,
+                .services-3 .services-texts p:last-child {
+                    color: var(--Cool-gray);
+                    font-size: .8rem;
+                    margin-top: 0;
+                    min-width: 100px;
+                }
+                .services-2 {
+                    padding-left: -40px;
+                }
+                .services-1 input,
+                .services-2 input,
+                .services-3 input {
+                    padding: 0px;
+                    width: 15px;
+                    height: 15px;
+                    margin: 0 auto;
+                    accent-color: var(--Marine-blue);
+                }
+                .mnt {
+                    color: var(--Marine-blue);
+                    font-size: .7rem;
+                }
+                .services-2 .services-texts {
+                    width: 170px;
+                }
+                .checkbox-div {
+                    width: 30px;
+                    height: 30px;
+                    align-content: center;
+                    padding: 8px 8px;
+                    margin-right: 0px;
+                }
+                /* Step 4 ( monthly / yearly )section starts here */
+                .summary-con {
+                    width: auto;
+                }
+                .first-sum,
+                .second-sum,
+                .third-sum,
+                .total-summary {
+                    display: flex;
+                    justify-content: space-between;
+                }
+                .first-sum p,
+                .second-sum div:last-child,
+                .third-sum div:last-child {
+                    color: var(--Marine-blue);
+                }
+                .first-sum a,
+                .second-sum div:first-child,
+                .third-sum div:first-child,
+                .total-summary div:first-child {
+                    color: var(--Cool-gray);
+                }
+                .first-sum {
+                    margin-bottom: 10px;
+                }
+                .summary-texts {
+                    background-color: var(--Light-gray);
+                    margin-top: 20px;
+                    padding: 20px;
+                    border-radius: 5px;
+                }
+                .total-summary {
+                    padding: 15px;
+                }
+                .maintotal {
+                    margin-left: 5px;
+                    font-size: .8rem;
+                    color: var(--Purplish-blue);
+                }
+                /* Step 5 section starts here */
+                .step-5 {
+                    text-align: center;
+                    padding: 50px;
+                }
+                .thank-you-icon img {
+                    width: 20%;
+                }
+                .thank-you-con h2 {
+                    color: var(--Marine-blue);
+                }
+                .thank-you-con p {
+                    color: var(--Cool-gray);
+                }
+            }
