@@ -491,7 +491,7 @@
                     background-repeat: no-repeat;
                     background-size: cover;
                     padding: 20px 60px 150px;
-                    height: 10vh;
+                    height: 12vh;
                     border-radius: 0;
                     width: 100vw;
                 }
@@ -507,7 +507,7 @@
                 }
                 .number-div {
                     text-align: center;
-                    padding: 8px 15px;
+                    padding: 5px 15px;
                     border-radius: 50%;
                     border: 1px solid var(--White);
                     color: var(--White);
@@ -518,7 +518,7 @@
                 .right-section {
                     width: 80%;
                     position: absolute;
-                    top: 60%;
+                    top: 70%;
                     left: 9%;
                     padding: 30px;
                     background-color: var(--White);
